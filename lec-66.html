@@ -6,6 +6,56 @@
     <title>Document</title>
 </head>
 <body>
+   
     
+    <script>
+        const fruits = [ 'apple', 'banana', 'pineapple', 'kiwi' ]
+        
+        console.log(fruits)
+
+
+        console.log("adding element using 'push' :-")
+        fruits.push("watermelon")
+        console.log(fruits)
+
+        console.log("removing element using 'shift' from start :-")
+        fruits.shift()
+        console.log(fruits)
+
+        console.log("finding index no of element 'kiwi' ")
+        console.log(fruits.indexOf("kiwi"));
+
+        console.log("add more element")
+        fruits.push("papya", "grapes", "chikoo")
+        console.log(fruits)
+
+        console.log("removing middle element using splice")
+       fruits.splice(3, 2)
+       console.log(fruits)
+
+       console.log("adding  middle element using splice")
+       fruits.splice(1, 1, "dargon fruit", "papya", "grapes")
+       console.log(fruits)
+
+       console.log("adding  middle element without remove any element using splice")
+       fruits.splice(0, 0, "pineapple" )
+       console.log(fruits)
+
+       console.log("checking function array is not")
+       console.log(Array.isArray(fruits))
+
+       console.log("reversing array using 'reverse'")
+      console.log( fruits.reverse())
+
+      console.log("sorting array Alphabetically using 'sort' ")
+      console.log( fruits.sort())
+
+      console.log("sorting array alphabetically desending order")
+      console.log( fruits.sort().reverse())
+      
+      console.log("using join() method")
+      let allfruits = fruits.join("<")
+      console.log(allfruits)
+    </script>
 </body>
 </html>
